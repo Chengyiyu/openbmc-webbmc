@@ -7,6 +7,7 @@
 #include <dbus_monitor.hpp>
 #include <dbus_singleton.hpp>
 #include <google/google_service_root.hpp>
+#include <caesar/caesar_service_root.hpp>
 #include <hostname_monitor.hpp>
 #include <ibm/management_console_rest.hpp>
 #include <image_upload.hpp>
@@ -111,6 +112,10 @@ int run()
 
 #ifdef BMCWEB_ENABLE_GOOGLE_API
     crow::google_api::requestRoutes(app);
+#endif
+
+#ifdef BMCWEB_ENABLE_CAESAR_API
+    crow::caesar_api::requestRoutes(app);
 #endif
 
     if (bmcwebInsecureDisableXssPrevention != 0)

@@ -63,7 +63,7 @@ feature_map = {
   'basic-auth'                                  : '-DBMCWEB_ENABLE_BASIC_AUTHENTICATION',
   'cookie-auth'                                 : '-DBMCWEB_ENABLE_COOKIE_AUTHENTICATION',
   'google-api'                                  : '-DBMCWEB_ENABLE_GOOGLE_API',
-  'caesar-api'                                  : '-DBMCWEB_ENABLE_CAESAR_API',
+  'caesarfish-api'                              : '-DBMCWEB_ENABLE_CAESARFISH_API',
   'host-serial-socket'                          : '-DBMCWEB_ENABLE_HOST_SERIAL_WEBSOCKET',
   'ibm-management-console'                      : '-DBMCWEB_ENABLE_IBM_MANAGEMENT_CONSOLE',
   'insecure-disable-auth'                       : '-DBMCWEB_INSECURE_DISABLE_AUTHENTICATION',
